@@ -67,7 +67,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>"$(SolutionDir)\packages\ILMerge.2.14.1208\tools\ILMerge.exe" /out:"$(TargetDir)\StripeExampleMerged.dll" "$(TargetDir)\StripeExample.dll" "$(TargetDir)\Stripe.net.dll" "$(TargetDir)\Newtonsoft.Json.dll"</PostBuildEvent>
+    <PostBuildEvent>"$(SolutionDir)\packages\ILMerge.2.14.1208\tools\ILMerge.exe" /out:"$(TargetDir)\StripeExampleMerged.dll" "$(TargetDir)\StripeExample.dll" "$(TargetDir)\Stripe.net.dll"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
