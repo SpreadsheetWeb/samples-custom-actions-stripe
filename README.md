@@ -117,7 +117,7 @@ There are two options you can choose from:
 
     The merge operation can be performed using [ILMerge](https://www.nuget.org/packages/ilmerge). To perform the merge, you will need to pull down the _ILMerge_ nuget package and then execute a command triggered by a post-build event. The sample solution already has this event defined. It can be reviewed in the project's **Properties** window (the command below references v2.14.1208 of _ILMerge_ - if your version differs, then substitute the package file path as required):
 
-    > "$(SolutionDir)\packages\ILMerge.2.14.1208\tools\ILMerge.exe" /out:"$(TargetDir)\StripeExampleMerged.dll" "$(TargetDir)\StripeExample.dll" "$(TargetDir)\Stripe.net.dll" "$(TargetDir)\Newtonsoft.Json.dll"
+    > "$(SolutionDir)\packages\ILMerge.2.14.1208\tools\ILMerge.exe" /out:"$(TargetDir)\StripeExampleMerged.dll" "$(TargetDir)\StripeExample.dll" "$(TargetDir)\Stripe.net.dll"
     
     As output from this statement, the _ILMerge_ component will generate a separate assembly (**StripeExampleMerged.dll**) after the sample's build. Rather than utilizing the **StripeExample.dll** for the instructions above, you can utilize this _Merged_ version of the assembly.
     
